@@ -49,7 +49,7 @@ describe 'Show page' do
   before do
     @coupon = Coupon.create(coupon_code: "FREESTUFF", store: "Chipotle")
   end
-
+  
   it 'renders properly' do
     visit coupon_path(@coupon)
     expect(page.status_code).to eq(200)
